@@ -1,5 +1,5 @@
 #!/bin/bash
-DATE=$(date +"%d-%m-%y")
+DATE=$(date +"%d")
 
 if [ $(($DATE%2)) -eq 0 ]
 then
