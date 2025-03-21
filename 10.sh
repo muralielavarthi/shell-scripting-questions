@@ -6,7 +6,7 @@ echo "enter password"
 read PASSWORD
 #read -p PASSWORD (-p:password not visible in terminal)
 
-if [ $USERNAME=="admin" && $PASSWORD=="admin" ]
+if [ $USERNAME=="admin" ] && [ $PASSWORD=="admin" ]
 then
     echo "Login Success"
 else
