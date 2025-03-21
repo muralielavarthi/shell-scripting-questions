@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 NUMBER=1
 while [ $NUMBER -le 5 ]
 do
