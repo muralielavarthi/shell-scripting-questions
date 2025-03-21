@@ -9,4 +9,4 @@ then
     echo "No of files in given directory is: $Count"
 else
     echo "enter valid directory"
-files
+fi
