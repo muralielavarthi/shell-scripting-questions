@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x #Enables debugging, display line by line execution
 
 NUMBER=1
 while [ $NUMBER -le 5 ]
