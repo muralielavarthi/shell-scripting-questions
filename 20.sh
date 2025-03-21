@@ -8,7 +8,9 @@ do
     if [ $NUMBER -eq 3 ]
     then
         continue
+    else
+        echo $NUMBER
     fi
-    echo $NUMBER
+    
     NUMBER=$(($NUMBER+1))
 done
