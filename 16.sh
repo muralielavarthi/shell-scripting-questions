@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir dummy; cd dummy
-
 for i in {1..100}
 do
     if [ $(($i % 5)) -eq 0 ]
