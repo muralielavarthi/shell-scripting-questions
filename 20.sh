@@ -7,6 +7,7 @@ while [ $NUMBER -le 5 ]
 do
     if [ $NUMBER -eq 3 ]
     then
+        NUMBER=$(($NUMBER+1))
         continue
     else
         echo $NUMBER
