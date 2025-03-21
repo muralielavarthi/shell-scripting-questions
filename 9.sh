@@ -2,7 +2,7 @@
 echo "enter the number"
 read NUMBER
 
-if [ $(($NUMBER%10)) -eq 0 ]
+if [ $(($NUMBER % 10)) -eq 0 ]
 then
     echo "divisible by 10"
 else

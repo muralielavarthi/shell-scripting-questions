@@ -1,7 +1,7 @@
 #!/bin/bash
 HOUR=$(date +"%H")
 
-if [ $(($HOUR%2)) -eq 0 ]
+if [ $(($HOUR % 2)) -eq 0 ]
 then
     echo "OK"
 else
