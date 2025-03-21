@@ -6,5 +6,19 @@ read NUMBER_1
 echo "enter number 2"
 read NUMBER_2
 
-SUM=$(($NUMBER_1 + $NUMBER_2))
-echo "SUM is : $SUM"
+
+function validate()
+{
+    if [ $NUMBER_1 -eq $NUMBER_1] && [ $NUMBER_2 -eq $NUMBER_2]
+    then
+        SUM=$(($NUMBER_1 + $NUMBER_2))
+        echo "SUM is : $SUM"
+    else
+        echo "enter validate numbers"
+
+}
+
+validate $NUMBER_1 $NUMBER_2
+
+
+
