@@ -9,7 +9,7 @@ read NUMBER_2
 
 function VALIDATE()
 {
-    if [ $NUMBER_1 -eq $NUMBER_1] && [ $NUMBER_2 -eq $NUMBER_2]
+    if [ $NUMBER_1 -eq $NUMBER_1 ] && [ $NUMBER_2 -eq $NUMBER_2 ]
     then
         SUM=$(($NUMBER_1 + $NUMBER_2))
         echo "SUM is : $SUM"
