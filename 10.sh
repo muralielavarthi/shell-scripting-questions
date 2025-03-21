@@ -3,8 +3,7 @@
 echo "enter user name"
 read USERNAME
 echo "enter password"
-#read PASSWORD (-p:password not visible in terminal)
-read -p PASSWORD
+read PASSWORD
 
 if [ $USERNAME == "admin" ] && [ $PASSWORD == "admin" ]
 then
