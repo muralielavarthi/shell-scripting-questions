@@ -6,6 +6,8 @@ read NUMBER_1
 echo "enter number 2"
 read NUMBER_2
 
+let $NUMBER_1 +0
+echo $?
 
 function VALIDATE()
 {
@@ -14,7 +16,7 @@ function VALIDATE()
         SUM=$(($NUMBER_1 + $NUMBER_2))
         echo "SUM is : $SUM"
     else
-        echo "enter validate numbers"
+        echo "enter valid numbers"
     fi
 }
 VALIDATE $NUMBER_1 $NUMBER_2
