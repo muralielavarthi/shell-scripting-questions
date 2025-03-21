@@ -7,7 +7,7 @@ echo "enter number 2"
 read NUMBER_2
 
 
-function validate()
+function VALIDATE()
 {
     if [ $NUMBER_1 -eq $NUMBER_1] && [ $NUMBER_2 -eq $NUMBER_2]
     then
@@ -15,10 +15,6 @@ function validate()
         echo "SUM is : $SUM"
     else
         echo "enter validate numbers"
-
+    fi
 }
-
-validate $NUMBER_1 $NUMBER_2
-
-
-
+VALIDATE $NUMBER_1 $NUMBER_2
