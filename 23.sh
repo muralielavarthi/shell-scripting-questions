@@ -7,4 +7,4 @@ echo "enter number 2"
 read NUMBER_2
 
 SUM=$(($NUMBER_1 + $NUMBER_2))
-echo "MUL is : $SUM"
+echo "Sum is : $SUM"
