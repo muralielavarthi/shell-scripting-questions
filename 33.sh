@@ -12,7 +12,7 @@ then
             grep "error" $LINE &>logfile.txt
             if [ $? -eq 0 ]
             then
-                echo $LINE >> output.txt
+                echo $LINE >output.txt
             fi
         else
             echo "No read permisson $LINE"
