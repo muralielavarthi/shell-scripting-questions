@@ -1,9 +1,6 @@
 #!/bin/bash
 
-#CURRENT_DATE=$(date +"%d")
-
-echo "enter date"
-read CURRENT_DATE
+CURRENT_DATE=$(date +"%d")
 
 if [ $CURRENT_DATE -lt 10 ]
 then
