@@ -7,7 +7,7 @@ then
     LOG_FILES=$(find "$DIR" -type f -name "*.log")
     while read LINE # read line by line from file
     do
-        if [ -r $LINE ] # to check whether file has read permissions
+        if [ -r $LINE ] # to check whether log file has read permissions
         then
             grep -i "error" $LINE &>>log-file.txt
             if [ $? -eq 0 ]
