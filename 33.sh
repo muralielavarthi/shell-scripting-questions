@@ -5,9 +5,9 @@ read DIR
 if [ -d $DIR ]
 then
     LOG_FILES=$(find "$DIR" -type f -name "*.log")
-    while read LINE
+    while read LINE # read line by line from file
     do
-        if [ -r $LINE ]
+        if [ -r $LINE ] # to check whether file has read permissions
         then
             grep -i "error" $LINE &>>log-file.txt
             if [ $? -eq 0 ]
