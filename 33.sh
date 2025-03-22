@@ -1,6 +1,4 @@
 #!/bin/bash
-
-set -x
 echo -n "enter valid directory path:"
 read DIR
 if [ -d $DIR ]
