@@ -6,8 +6,7 @@ echo "Enter num 2"
 read NUM2
 
 function SUM(){
-   return $(($NUM1 + $NUM2))
+   RESULT=$(($NUM1 + $NUM2))
+   echo "SUM is: $RESULT"
 }
-
-RESULT= SUM $NUM1 $NUM2
-echo "SUM is: $RESULT"
+SUM $NUM1 $NUM2
