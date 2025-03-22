@@ -7,12 +7,17 @@ then
     LOG_FILES=$(find "$DIR" -type f -name "*.log")
     while read LINE
     do
-        grep "error" $LINE &>logfile.txt
-        if [ $? -eq 0 ]
+        if [ -r $LINE ]
         then
-            echo $LINE >> output.txt
-        fi
-    done <<< $LOG_FILES   # when you want pass file as input
+            grep "error" $LINE &>logfile.txt
+            if [ $? -eq 0 ]
+            then
+                echo $LINE >> output.txt
+            fi
+        else
+            echo "No read permisson $LINE"
+        fi  
+    done <<< $LOG_FILES   # when you want pass file as input (<<<)
 else
     echo "enter valid directory path"
 
