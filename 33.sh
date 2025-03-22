@@ -3,11 +3,9 @@
 echo -n "enter valid directory path:"
 read DIR
 
-
-
 if [ -d $DIR ]
 then
-    LOG_FILES= $(find $DIR -type f -name "*.log")
+    LOG_FILES= $(sudo find $DIR -type f -name "*.log")
     while read LINE
     do
         grep "error" $LINE
