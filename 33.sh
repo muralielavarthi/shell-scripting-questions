@@ -23,4 +23,7 @@ else
 
 fi
 
-cat output.txt
+cat output.txt | sort | uniq 
+
+# This would sort the lines and then remove any duplicate lines from the entire file.
+# This sorts the output of cat output.txt in ascending order (by default).
