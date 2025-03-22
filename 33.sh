@@ -27,3 +27,6 @@ cat output.txt | sort | uniq
 
 # This would sort the lines and then remove any duplicate lines from the entire file.
 # This sorts the output of cat output.txt in ascending order (by default).
+# The sort command is used to arrange the lines of text in a specified order
+# sort filename.txt will sort the contents of filename.txt in alphabetical order.
+
