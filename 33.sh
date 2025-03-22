@@ -1,4 +1,6 @@
 #!/bin/bash
+
+$LOG_FILE="log-file-now"
 echo -n "enter valid directory path:"
 read DIR
 if [ -d $DIR ]
@@ -6,7 +8,7 @@ then
     LOG_FILES=$(find "$DIR" -type f -name "*.log")
     while read LINE
     do
-        grep "error" $LINE
+        grep "error" $LINE &>>$LOG_FILE
         if [ $? -eq 0 ]
         then
             echo $LINE >> output.txt
@@ -16,3 +18,5 @@ else
     echo "enter valid directory path"
 
 fi
+
+cat ouput.txt
