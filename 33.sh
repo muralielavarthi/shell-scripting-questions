@@ -1,8 +1,5 @@
 #!/bin/bash
 
-$OUTPUT_FILE=$(touch output.txt)
-$LOG_FILE=$(touch logfile.txt)
-
 echo -n "enter valid directory path:"
 read DIR
 if [ -d $DIR ]
@@ -12,10 +9,10 @@ then
     do
         if [ -r $LINE ]
         then
-            grep "error" $LINE &>$LOG_FILE
+            grep "error" $LINE
             if [ $? -eq 0 ]
             then
-                echo $LINE >$OUTPUT_FILE
+                echo $LINE >output.txt
             fi
         else
             echo "No read permisson $LINE"
@@ -26,4 +23,4 @@ else
 
 fi
 
-cat $OUTPUT_FILE
+cat output.txt
