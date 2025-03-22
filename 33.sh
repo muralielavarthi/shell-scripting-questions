@@ -9,7 +9,7 @@ then
     do
         if [ -r $LINE ]
         then
-            grep "error" $LINE
+            grep "error" $LINE &>>log-file.txt
             if [ $? -eq 0 ]
             then
                 echo $LINE >output.txt
