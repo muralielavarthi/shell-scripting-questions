@@ -1,8 +1,8 @@
 #!/bin/bash
 
+set -x
 echo -n "enter valid directory path:"
 read DIR
-
 if [ -d "$DIR" ]
 then
     LOG_FILES=$(find "$DIR" -type f -name "*.log")
