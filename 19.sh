@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while 
+for i in {1..10}
 do
     if [ $i -eq 2 ]
     then
