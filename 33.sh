@@ -18,4 +18,4 @@ else
 
 fi
 
-cat ouput.txt
+cat output.txt
