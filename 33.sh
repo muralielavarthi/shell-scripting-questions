@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$LOG_FILE="log-file-now"
+$LOG_FILE=logfile.txt
 echo -n "enter valid directory path:"
 read DIR
 if [ -d $DIR ]
