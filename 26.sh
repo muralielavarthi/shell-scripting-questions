@@ -4,7 +4,7 @@ echo "enter valid directory"
 read DIR
 if [ -d $DIR ]
 then
-    du -a $DIR | sort -n -r | head -n 10
+    du -ah $DIR | sort -n -r | head -n 10
 else
     echo "$DIR is invalid"
 fi
